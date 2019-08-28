@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Muw-p4-tJJ">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animal Detail View Controller-->
+        <scene sceneID="Q8y-X1-bi3">
+            <objects>
+                <viewController id="Muw-p4-tJJ" customClass="AnimalDetailViewController" customModule="DogAndCat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y0G-OM-QoL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mJv-3E-Vxc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="detection" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZM-ax-RFo">
+                                <rect key="frame" x="10" y="577" width="355" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mJv-3E-Vxc" firstAttribute="top" secondItem="3Ny-53-cGf" secondAttribute="top" id="0Ao-7b-UKa"/>
+                            <constraint firstItem="mJv-3E-Vxc" firstAttribute="leading" secondItem="3Ny-53-cGf" secondAttribute="leading" id="5qd-c9-bck"/>
+                            <constraint firstItem="mJv-3E-Vxc" firstAttribute="trailing" secondItem="3Ny-53-cGf" secondAttribute="trailing" id="BCV-47-SMq"/>
+                            <constraint firstItem="mJv-3E-Vxc" firstAttribute="bottom" secondItem="3Ny-53-cGf" secondAttribute="bottom" constant="-100" id="Ili-v8-6xI"/>
+                            <constraint firstItem="RZM-ax-RFo" firstAttribute="top" secondItem="mJv-3E-Vxc" secondAttribute="bottom" constant="10" id="a1s-SK-pfZ"/>
+                            <constraint firstItem="3Ny-53-cGf" firstAttribute="bottom" secondItem="RZM-ax-RFo" secondAttribute="bottom" constant="10" id="cU2-Nu-vOm"/>
+                            <constraint firstItem="RZM-ax-RFo" firstAttribute="leading" secondItem="3Ny-53-cGf" secondAttribute="leading" constant="10" id="fo1-Js-AMU"/>
+                            <constraint firstItem="mJv-3E-Vxc" firstAttribute="centerX" secondItem="y0G-OM-QoL" secondAttribute="centerX" id="kuh-aK-UqY"/>
+                            <constraint firstItem="3Ny-53-cGf" firstAttribute="trailing" secondItem="RZM-ax-RFo" secondAttribute="trailing" constant="10" id="rcy-Wx-gpZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Ny-53-cGf"/>
+                    </view>
+                    <connections>
+                        <outlet property="detectionLabel" destination="RZM-ax-RFo" id="Bev-xh-Ozi"/>
+                        <outlet property="imageView" destination="mJv-3E-Vxc" id="AMf-Yd-E7f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyw-es-qLh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
