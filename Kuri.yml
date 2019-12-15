@@ -1,0 +1,6 @@
+DefaultTemplateDirectoryPath: ./KuriTemplate/
+ProjectRootPath: ./
+ProjectFileName: DogAndCat.xcodeproj
+GenerateRootPath: ./DogAndCat/
+Target: DogAndCat
+ShouldRemoveLayerNameFromDirectory: false
